@@ -23,8 +23,8 @@ class PIDaxis():
 
     def reset(self):
         self._old_err = None
-        self._p = 0
-        self._i = 0.5
+        self._p = 0.25
+        self._i = 0
         self._d = 0
         self._dd = 0
         self._ddd = 0
