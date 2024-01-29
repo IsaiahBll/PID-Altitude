@@ -75,10 +75,10 @@ class PID:
 
                  # Kv 2300 motors have midpoint 1300, Kv 2550 motors have midpoint 1250
                  throttle=PIDaxis(1,
-                                  0.6, #0.5/height_factor * battery_factor,
+                                  0.7, #0.5/height_factor * battery_factor,
                                   1,
                                   i_range=(-400, 400), control_range=(1200, 1375),
-                                  d_range=(-40, 40), midpoint=1350)
+                                  d_range=(-40, 40), midpoint=1300)
                  ):
 
         self.trim_controller_cap_plane = 0.05
